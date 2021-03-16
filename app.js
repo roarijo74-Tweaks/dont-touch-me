@@ -1,0 +1,1 @@
+(()=>{let els=document.querySelectorAll('.app-version');fetch('/version/release').then(response=>response.json()).then(data=>{els.forEach((el)=>{el.innerHTML=data.version;});});})();
